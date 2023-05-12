@@ -1,0 +1,30 @@
+.details{
+    background-color:var(--primary-color) ;
+    display: flex;
+    padding: 6rem ;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+.details div{
+width: 45%;
+}
+
+.details img{
+width: 100%;
+}
+.details  h1{
+    font-family: var(--font-oswald);
+color: var(--secondary-color);
+font-size: 5rem;
+}
+.details article{
+    color: white;
+    line-height: 2rem;
+    margin: 2rem 0;
+    font-family: var(--font-oswald);
+}
+.hero{
+    background-color: var(--dark-blue-color);
+}

@@ -1,0 +1,237 @@
+root{
+     --primary-color:#130216;
+    --secondary-color: #FFA500;
+    --dark-blue-color: #00008B;
+      --action-color: #2869ff;
+  --action-color-hover: #6291fd;
+};
+
+*{
+    padding: 0;
+    margin: 0;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #130216b5;
+        }
+
+        .dash{
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #130216;
+            color: #fff;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.3s;
+        }
+
+        .sidebar.collapsed {
+            width: 60px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .sidebar a:not(.logo a):hover {
+            background-color: #ffcc00;
+            color: #333;
+        }
+
+        .sidebar .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sidebar .icon {
+            fill: #fff;
+            margin-right: 10px;
+        }
+
+        .main-content {
+            
+        margin-left: auto;
+        width: calc(100vw - 290px);
+
+            /* padding: 20px; */
+        }
+
+        /* CSS for dashboard content */
+        .dashboard-heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .widget {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        
+        .app-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4px;
+  background-color: #130216;
+}
+.app-content-headerText {
+  color: #130216;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+.app-content-headerButton {
+  background-color: #FFA500;
+  color: #fff;
+  font-size: 14px;
+  /* line-height: 24px; */
+  border: none;
+  border-radius: 4px;
+  /* height: 32px; */
+  padding: .5rem 1.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+    text-decoration: none;
+}
+.app-content-headerButton:hover {
+  background-color: var(--action-color-hover);
+  color: #ffcc00;
+  border: 1px solid #FFA500;
+}
+
+main > form{
+  display: grid;
+  width: 50dvw;
+  margin: 0 auto;
+  gap: 
+  1rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+main>form input:not(input[type="file"]){
+  height: 3rem;
+  background: none;
+  border: 1px solid #130216;
+  color: #130216;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+
+form input:focus{
+  outline-color: #2869ff;
+}
+
+form button, .delete-btn, .edit-btn{
+  background-color: #2869ff;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border:none;
+}
+
+form .button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+form button:hover{
+background-color: #6291fd;
+}
+
+
+        /* CSS for responsive layout */
+        @media (max-width: 768px) {
+            .logo a{
+    font-size: 1rem !important;
+            }
+            .sidebar {
+                width: 100px;
+                padding: 20px 5px;
+            }
+
+          
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .dashboard-heading {
+                font-size: 20px;
+            }
+        }
+
+
+         thead{
+  background-color: #fff;
+}
+thead th{
+  color: #1d2128;
+
+}
+
+tbody{
+  background-color: #1d2128;
+}
+
+td, th{
+  padding: 1rem .5rem;
+  text-transform: capitalize;
+} 
+
+
+td, th:not(thead th){
+  color: #f3f6fd;
+}
+
+table{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.action-td{
+    display: flex;
+    justify-content: space-evenly;
+}
+.action-td form:last-child button{
+    background-color: #ff4400;
+}
+
