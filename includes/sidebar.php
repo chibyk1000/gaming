@@ -1,6 +1,6 @@
  <div class="sidebar">
      <div class="logo">
-         <a href="#">Admin Dashboard</a>
+         <a href="../">Admin Dashboard</a>
      </div>
      <ul>
          <li>

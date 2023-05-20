@@ -12,8 +12,6 @@ include './includes/links.php'
     <!-- navbar -->
 <?php
 
-
-
 include './includes/header.php'
 ?>
 <main>

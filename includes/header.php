@@ -5,11 +5,12 @@
             <li><a href="./about.php">About</a></li>
             <li><a href="./contact.php">Contact</a></li>
             <li><a href="./product.php">Product</a></li>
+            <li><a href="./usefull-links.php">usefull links</a></li>
 
             <?php if (isset($_SESSION['user']) && isset($_SESSION['role'])) : ?>
 
                 <?php if ($_SESSION['role'] == 'admin') : ?>
-                    <li><a href="./account/">Admin</a></li>
+                    <li><a href="./admin">Admin</a></li>
                 <?php endif ?>
                 <li class="login"><a href="./logout.php">Logout</a></li>
             <?php else : ?>
@@ -23,7 +24,7 @@
                     <span><?php echo $cart->countItems() ?></span>
                 </a>
             <?php else : ?>
-                <a href="#" class="cartnum">
+                <a href="./login.php" class="cartnum">
                     <i class="fa-solid fa-shopping-cart"></i>
                     <span><?php echo $cart->countItems() ?></span>
                 </a>

@@ -146,7 +146,7 @@ if (!in_array($type, $isallowed)) {
 die('invalid file type');
 }
 
-if ($size > 500000) {
+if ($size > 700000) {
 die('file too large');
 }
 }

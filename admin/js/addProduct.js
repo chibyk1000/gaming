@@ -23,8 +23,9 @@ addfrm.addEventListener("submit", async (event) => {
     console.log(response);
   if (response === "success") {
     alert("Success");
+
     error.textContent = "";
-    location.href = "./dashboard.php";
+    location.href = "./";
   } else {
     error.textContent = response;
   }

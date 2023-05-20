@@ -39,7 +39,7 @@
 
                 <tbody>
                     <?php
-$total = 0
+                    $total = 0
                     ?>
                     <?php foreach ($items as $key => $value) : ?>
 
@@ -63,12 +63,12 @@ $total = 0
                                     </form>
                                 </div>
                             </td>
-                            <td>$ <?php 
-                            $total += $productdetails[0]['price'] * $value['quantity'];
-                            echo number_format($productdetails[0]['price'] * $value['quantity']) 
-                            
-                            
-                            ?>
+                            <td>$ <?php
+                                    $total += $productdetails[0]['price'] * $value['quantity'];
+                                    echo number_format($productdetails[0]['price'] * $value['quantity'])
+
+
+                                    ?>
 
                             </td>
                             <td>
@@ -88,7 +88,7 @@ $total = 0
                 </thead>
                 <tbody>
                     <tr>
-                        <td>TotalPrice:  $ <?php echo number_format($total) ?></td>
+                        <td>TotalPrice: $ <?php echo number_format($total) ?></td>
                     </tr>
                     <tr>
                         <td><button>Make Order</button></td>
@@ -117,6 +117,7 @@ $total = 0
 
 
     ?>
+    <?php include './includes/footer.php' ?>
     <script src="./assets/js/login.js"></script>
 </body>
 

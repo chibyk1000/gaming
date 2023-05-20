@@ -14,4 +14,5 @@ if(isset($_POST['title']) && $_FILES['file']){
 
     $newProduct =  new ProductController($title, $price, $description, $file, $username);
 $newProduct->createNewProduct();
+echo 'success';
 }

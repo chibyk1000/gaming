@@ -28,7 +28,9 @@
                         <figure>
                             <img src="./uploads/<?php echo $product['image'] ?>" alt="" />
                         </figure>
+                        <span>$<?php echo $product['price'] ?></span>
                         <div class="article-body">
+
                             <h2><?php echo $product['title'] ?></h2>
                             <input type="hidden" value="<?php echo $product['product_id'] ?>" name="product_id">
                             <button href="#" class="addcart">
@@ -50,7 +52,7 @@
     if (isset($_POST['product_id'])) {
 
         $product_id = $_POST['product_id'];
-    
+
 
         $cart->addItem($product_id);
 
@@ -59,6 +61,8 @@
 
 
     ?>
+
+    <?php include './includes/footer.php' ?>
     <script src="./assets/js/login.js"></script>
 </body>
 

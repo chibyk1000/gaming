@@ -81,7 +81,7 @@ background: linear-gradient(90deg, rgba(19,2,22,1) 0%, rgba(255,165,0,1) 35%, rg
     left: 0;
 }
 .hero section, .join div{
-  z-index: 10 !important;
+ padding-top: 5rem;
 
 margin: auto;
 }
@@ -114,7 +114,7 @@ border-radius: 5px;
     opacity: .5;
     left: 0;
     top:0;
-    /* z-index: -1; */
+    z-index: -1;
     height: 100%;
     /* z-index: 10 */
 
@@ -350,3 +350,20 @@ display: none;
 }
 
 
+main .links{
+    color: white;
+}
+
+
+.links ul{
+    padding-left: 2rem;
+}
+
+.links li{
+
+    margin: 1rem  0 ;
+    list-style: decimal !important;
+}
+.links a{
+    color: white;
+}
